@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music streaming app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="musicstreaming.css">
+
+        </head>
+<body>
+    
+    <nav>
+        <ul>
+           <li class="navigation_bar"><img src="https://i.pinimg.com/564x/0f/d8/57/0fd8577fe8c1c38f28280f9cc3e8d237.jpg" alt="MY MUSIC"> MY MUSIC</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Holly sound - Not Autharised</h1>
+            <div class="ContainerOfSong">
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/474x/52/b9/ff/52b9ff7c087f2ee5fcdee716eabba213.jpg" alt="1">
+                    <span class="songName">Cloae - The_kingdom_Of_Ruin</span>
+                    
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/474x/1f/d9/1f/1fd91f3e06dff0ba1af28318e6084cab.jpg" alt="2">
+                    <span class="songName">Baki_Hanma - Yojiro_Hanma_The_Ogre</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/474x/ef/c4/f2/efc4f2469285417677bf369df610c496.jpg" alt="3">
+                    <span class="songName">Mitsua - Your_Name</span>
+                   
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/474x/46/03/e2/4603e2a896b98be2fbdaec197e484a95.jpg" alt="4">
+                    <span class="songName">Lee_jin - Takken_tag</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/236x/e9/22/f9/e922f9f43094a4f28bc5f25781428873.jpg" alt="5">
+                    <span class="songName">yoshimitsu - Jujutsu_Kaisen</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/236x/a8/c4/1d/a8c41d4a48db08e83547a34127a03174.jpg" alt="6">
+                    <span class="songName">Gojo_Saturo - Jujutsu_Kaisen</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/236x/6e/2b/a7/6e2ba7522ccde442a03678f55235fd7a.jpg" alt="7">
+                    <span class="songName">Naruto_Sasuke - Naruto_Shippuden</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/236x/21/19/de/2119def729d4695d69b1a0b3149b6ca7.jpg" alt="8">
+                    <span class="songName">Goku_Vegita - Dragon_Ball_Super</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/236x/87/76/b0/8776b09b87e5af216bb746a1faa8c22e.jpg" alt="9">
+                    <span class="songName">Light_Yagami - Death_Note</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="ItemOfSong">
+                    <img src="https://i.pinimg.com/236x/57/3f/c9/573fc9f917681690b49cf43466576f4e.jpg" alt="10">
+                    <span class="songName">Tanjiro - Demon_slayer</span>
+                    <span class="songPlayList"><span class="timestamp">05:34 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+             <span id="masterSongName">Cloae - The_kingdom_Of_Ruin</span>
+        </div>
+    </div>
+
+    
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+<script>
+console.log("Welcome to MY MUSIC");
+
+// Initialize the Variables
+let songIndex = 0;
+let audioElement = new Audio('songs/1.mp3');
+let masterPlay = document.getElementById('masterPlay');
+let myProgressBar = document.getElementById('myProgressBar');
+let gif = document.getElementById('gif');
+let masterSongName = document.getElementById('masterSongName');
+let songItems = Array.from(document.getElementsByClassName('ItemOfSong'));
+
+let songs = [
+{songName: "Cloae - The_kingdom_Of_Ruin", filePath: "songs/1.mp3", coverPath: "https://i.pinimg.com/474x/52/b9/ff/52b9ff7c087f2ee5fcdee716eabba213.jpg"},
+{songName: "Baki_Hanma - Yojiro_Hanma_The_Ogre", filePath: "songs/2.mp3", coverPath: "https://i.pinimg.com/474x/1f/d9/1f/1fd91f3e06dff0ba1af28318e6084cab.jpg"},
+{songName: "Mitsua - Your_Name[official release]", filePath: "songs/3.mp3", coverPath: "https://i.pinimg.com/474x/ef/c4/f2/efc4f2469285417677bf369df610c496.jpg"},
+{songName: "Lee_jin - Takken_tag[panda release]", filePath: "songs/4.mp3", coverPath: "https://i.pinimg.com/474x/46/03/e2/4603e2a896b98be2fbdaec197e484a95.jpg"},
+{songName: "yoshimitsu - Jujutsu_Kaisen[official release]", filePath: "songs/5.mp3", coverPath: "https://i.pinimg.com/236x/e9/22/f9/e922f9f43094a4f28bc5f25781428873.jpg"},
+{songName: "Gojo_Saturo - Jujutsu_Kaisen", filePath: "songs/2.mp3", coverPath: "https://i.pinimg.com/236x/a8/c4/1d/a8c41d4a48db08e83547a34127a03174.jpg"},
+{songName: "Naruto_Sasuke - Naruto_Shippuden", filePath: "songs/2.mp3", coverPath: "https://i.pinimg.com/236x/6e/2b/a7/6e2ba7522ccde442a03678f55235fd7a.jpg"},
+{songName: "Goku_Vegita - Dragon_Ball_Super", filePath: "songs/2.mp3", coverPath: "https://i.pinimg.com/236x/21/19/de/2119def729d4695d69b1a0b3149b6ca7.jpg"},
+{songName: "Light_Yagami - Death_Note", filePath: "songs/2.mp3", coverPath: "https://i.pinimg.com/236x/87/76/b0/8776b09b87e5af216bb746a1faa8c22e.jpg"},
+{songName: "Tanjiro - Demon_slayer", filePath: "songs/4.mp3", coverPath: "https://i.pinimg.com/236x/57/3f/c9/573fc9f917681690b49cf43466576f4e.jpg"},
+]
+
+songItems.forEach((element, i)=>{ 
+element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
+element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
+})
+
+
+// Handle play/pause click
+masterPlay.addEventListener('click', ()=>{
+if(audioElement.paused || audioElement.currentTime<=0){
+audioElement.play();
+masterPlay.classList.remove('fa-play-circle');
+masterPlay.classList.add('fa-pause-circle');
+gif.style.opacity = 1;
+}
+else{
+audioElement.pause();
+masterPlay.classList.remove('fa-pause-circle');
+masterPlay.classList.add('fa-play-circle');
+gif.style.opacity = 0;
+}
+})
+// Listen to Events
+audioElement.addEventListener('timeupdate', ()=>{ 
+// Update Seekbar
+progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
+myProgressBar.value = progress;
+})
+
+myProgressBar.addEventListener('change', ()=>{
+audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
+})
+
+const makeAllPlays = ()=>{
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+element.classList.remove('fa-pause-circle');
+element.classList.add('fa-play-circle');
+})
+}
+
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+element.addEventListener('click', (e)=>{ 
+makeAllPlays();
+songIndex = parseInt(e.target.id);
+e.target.classList.remove('fa-play-circle');
+e.target.classList.add('fa-pause-circle');
+audioElement.src = `songs/${songIndex+1}.mp3`;
+masterSongName.innerText = songs[songIndex].songName;
+audioElement.currentTime = 0;
+audioElement.play();
+gif.style.opacity = 1;
+masterPlay.classList.remove('fa-play-circle');
+masterPlay.classList.add('fa-pause-circle');
+})
+})
+
+document.getElementById('next').addEventListener('click', ()=>{
+if(songIndex>=9){
+songIndex = 0
+}
+else{
+songIndex += 1;
+}
+audioElement.src = `songs/${songIndex+1}.mp3`;
+masterSongName.innerText = songs[songIndex].songName;
+audioElement.currentTime = 0;
+audioElement.play();
+masterPlay.classList.remove('fa-play-circle');
+masterPlay.classList.add('fa-pause-circle');
+
+})
+
+document.getElementById('previous').addEventListener('click', ()=>{
+if(songIndex<=0){
+songIndex = 0
+}
+else{
+songIndex -= 1;
+}
+audioElement.src = `songs/${songIndex+1}.mp3`;
+masterSongName.innerText = songs[songIndex].songName;
+audioElement.currentTime = 0;
+audioElement.play();
+masterPlay.classList.remove('fa-play-circle');
+masterPlay.classList.add('fa-pause-circle');
+})
+</script>
+</body>
+</html>
